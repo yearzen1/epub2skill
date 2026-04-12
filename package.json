@@ -1,0 +1,36 @@
+{
+  "name": "epub2skill",
+  "version": "1.0.0",
+  "description": "Convert EPUB files into Claude/OpenCode skill folders",
+  "main": "bin/epub2skill.js",
+  "bin": {
+    "epub2skill": "bin/epub2skill.js"
+  },
+  "scripts": {
+    "start": "node bin/epub2skill.js",
+    "test": "node bin/epub2skill.js --help"
+  },
+  "keywords": [
+    "epub",
+    "markdown",
+    "cli",
+    "claude",
+    "opencode",
+    "skills"
+  ],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "bin",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "commander": "^14.0.3",
+    "epub2md": "^1.6.2",
+    "fast-glob": "^3.3.3",
+    "fs-extra": "^11.3.4"
+  }
+}
