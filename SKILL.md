@@ -33,6 +33,8 @@ epub2skill "<epub-or-glob>" \
 - `claude-global`: `~/.claude/skills/<skill-name>`
 - `opencode-project`: `<project>/.opencode/skills/<skill-name>`
 - `opencode-global`: `~/.config/opencode/skills/<skill-name>`
+- `qwen-project`: `<project>/.qwen/skills/<skill-name>`
+- `qwen-global`: `~/.qwen/skills/<skill-name>`
 
 ## Recommended Workflow
 

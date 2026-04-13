@@ -9,7 +9,7 @@
 
 - 支持单本或批量 EPUB（支持 glob）
 - 自动生成 Skill 目录结构（`SKILL.md` + `bookindex.md` + `resources/`）
-- 支持输出到 Claude/OpenCode 的项目级或全局技能目录
+- 支持输出到 Claude/OpenCode/Qwen 的项目级或全局技能目录
 - 可选 `--merge` 合并章节，`--force` 覆盖已有技能
 
 ## 安装
@@ -51,6 +51,8 @@ epub2skill <epubOrGlob> --skill <name> [options]
   - `claude-global`
   - `opencode-project`
   - `opencode-global`
+  - `qwen-project`
+  - `qwen-global`
 - `--project-root <path>`: 项目根目录（默认当前目录）
 - `--merge`: 每本书合并为一个 Markdown
 - `--force`: 覆盖已存在的 Skill 目录

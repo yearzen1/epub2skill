@@ -1,7 +1,7 @@
 {
   "name": "epub2skill",
   "version": "1.0.0",
-  "description": "Convert EPUB files into Claude/OpenCode skill folders",
+  "description": "Convert EPUB files into Claude/OpenCode/Qwen skill folders",
   "main": "bin/epub2skill.js",
   "bin": {
     "epub2skill": "bin/epub2skill.js"
@@ -16,6 +16,7 @@
     "cli",
     "claude",
     "opencode",
+    "qwen",
     "skills"
   ],
   "author": "",

@@ -15,6 +15,8 @@ const ALLOWED_TARGETS = new Set([
   "claude-global",
   "opencode-project",
   "opencode-global",
+  "qwen-project",
+  "qwen-global",
 ]);
 
 function main() {
@@ -27,7 +29,7 @@ function main() {
     .requiredOption("--skill <name>", "skill name, recommend kebab-case")
     .option(
       "--targets <list>",
-      "comma-separated targets: claude-project,claude-global,opencode-project,opencode-global",
+      "comma-separated targets: claude-project,claude-global,opencode-project,opencode-global,qwen-project,qwen-global",
       DEFAULT_TARGET
     )
     .option("--project-root <path>", "project root path", process.cwd())
@@ -220,6 +222,12 @@ function resolveTargets(targets, projectRoot, skillName) {
         break;
       case "opencode-global":
         baseDir = path.join(home, ".config", "opencode", "skills");
+        break;
+      case "qwen-project":
+        baseDir = path.join(projectRoot, ".qwen", "skills");
+        break;
+      case "qwen-global":
+        baseDir = path.join(home, ".qwen", "skills");
         break;
       default:
         throw new Error(`Unsupported target: ${target}`);

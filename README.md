@@ -9,7 +9,7 @@ Convert any EPUB book into agent-ready skills, so your agent can support you wit
 
 - Convert one or many EPUB files (glob supported)
 - Auto-generate skill structure (`SKILL.md` + `bookindex.md` + `resources/`)
-- Output to Claude/OpenCode project-level or global skill folders
+- Output to Claude/OpenCode/Qwen project-level or global skill folders
 - Optional `--merge` for merged markdown and `--force` for overwrite
 
 ## Install
@@ -51,6 +51,8 @@ Key options:
   - `claude-global`
   - `opencode-project`
   - `opencode-global`
+  - `qwen-project`
+  - `qwen-global`
 - `--project-root <path>`: project root (default: current directory)
 - `--merge`: merge each book into one markdown file
 - `--force`: overwrite existing skill directory
